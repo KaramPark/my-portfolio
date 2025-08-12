@@ -44,10 +44,7 @@ const ProjectsSection = ({ projects }) => {
                   </div>
 
                   {project.metrics && (
-                    <div className="mb-6">
-                      <h4 className="mb-3">성과 지표</h4>
-                      <div className="flex items-center gap-2">
-                       {project.metrics && (
+
                     <div className="mb-6">
                       <h4 className="mb-3">성과 지표</h4>
                       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
@@ -102,9 +99,7 @@ const ProjectsSection = ({ projects }) => {
                       </div>
                     </div>
                   )}
-                      </div>
-                    </div>
-                  )}
+
 
                   <div className="flex flex-wrap gap-2 mb-6">
                     {Object.entries(project.stack).map(([category, techs]) =>
